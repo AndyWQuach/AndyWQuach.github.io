@@ -1,1 +1,0 @@
-web: gunicorn --chdir websiteapp app:app
