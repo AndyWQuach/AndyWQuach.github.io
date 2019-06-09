@@ -6,7 +6,7 @@ from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
 app = Flask(__name__)
-Scss(app, static_dir='static/css', asset_dir='sass')
+Scss(app, static_dir='static', asset_dir='sass')
 
 app.config.from_pyfile('settings.py')
 pages = FlatPages(app)
