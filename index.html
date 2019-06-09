@@ -3,16 +3,88 @@
 <html lang="en-US">
   <head>
     <title>Andy Quach | Consultant and Do-er</title>
-      <link rel="import" href="websiteapp/includes/_head.html">
+      <link rel="stylesheet" href="websiteapp/static/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">    
   </head>
   <body class="main">
-      <link rel="import" href="websiteapp/includes/_navigation.html">
 
-      <link rel="import" href="websiteapp/includes/_homepage-hero.html">
+      <nav class="nav">
+          <div class="container container--vertically-center">
+          <!-- To add: Personal logo<div class="nav__brand">
+              <a href="http://danielrd.com">
+                  @include("images/logo.svg")
+              </a>
+          -->
+              </div>
+              <ul class="nav__list">
+              <li class="nav__list-item">
+                  <a data-scroll href="#Projects">Projects</a>
+              </li>
+              <li class="nav__list-item">
+                  <a data-scroll href="#Blog">Blog</a>
+              </li>
+              </ul>
+          </div>
+      </nav>
 
-      <link rel="import" href="websiteapp/includes/_footer.html">
+      <section class="hero">
+          <div class="container">
+              <h1 class="hero__title">
+              I’m Andy Quach, a management consultant living in London, 
+              with interests in Data Science and Marketplaces.
+              </h1>
+          </div>
+          <div class="container container--wrap">
+              <div class="hero__employer hero__employer--oliverwyman">
+                  <h3 class="employer__label">
+                      Currently:
+                  </h3>
+                  <a target="_blank" href="https://www.oliverwyman.com/index.html">
+                      <img src="../img/Oliver_Wyman_Logo.svg"></img>
+                  </a>
+              </div>
+              <div class="hero__employer">
+                  <h3 class="employer__label">
+                      Previously:
+                  </h3>
+                  <a target="_blank" href="https://www.cam.ac.uk/">
+                      <img src="../img/Cambridge_logo.jpg"></img>
+                  </a>
+              </div>
+          </div>
+      </section>
       
-      <link rel="import" href="websiteapp/includes/_head.html">
-
+      <footer id="contact" class="footer">
+          <div class="container">
+              <h2 class="secondary-header">
+              Looking to start a project?
+              </h2>
+              <a class="hero__link" href="mailto: andyquach@outlook.com"> Let's talk.</a>
+          </div>
+          <div class="container">
+              <ul class="social-list">
+              <li class="social-list__item">
+                  <a href="https://github.com/AndyWQuach" class="social-list__item-link">
+                  GitHub
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a href="https://www.linkedin.com/in/andywquach" class="social-list__item-link">
+                  LinkedIn
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a href="https://www.facebook.com/awquach" class="social-list__item-link">
+                  Instagram
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a href="mailto: andyquach@outlook.com" class="social-list__item-link">
+                  Email
+                  </a>
+              </li>
+              </ul>
+          </div>
+      </footer>      
   </body>
 </html>
